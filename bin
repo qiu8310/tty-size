@@ -1,0 +1,7 @@
+#!/usr/bin/env node
+
+var size = require('./')();
+
+console.log('');
+console.log('   width: %d  height: %d', size.width, size.height);
+console.log('');

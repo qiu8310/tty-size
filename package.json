@@ -1,0 +1,30 @@
+{
+  "name": "tty-size",
+  "version": "1.0.0",
+  "description": "Get tty's width and height.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "tty-size": "bin"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/qiu8310/tty-size.git"
+  },
+  "keywords": [
+    "window",
+    "size",
+    "tty",
+    "stdout",
+    "stdin",
+    "stream"
+  ],
+  "author": "Mora",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/qiu8310/tty-size/issues"
+  },
+  "homepage": "https://github.com/qiu8310/tty-size#readme"
+}
