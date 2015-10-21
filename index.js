@@ -1,15 +1,14 @@
 var tty = require('tty');
 
 module.exports = function (ttyStream) {
-  var refs = ttyStream ? ttyStream : [process.stdin, process.stdout];
+  var refs = ttyStream ? ttyStream : [process.stderr, process.stdout, process.stdin];
   var width, height, size;
 
   if (refs.some(function (stream) {
     if (!stream.isTTY) return false;
-    
     if (stream.columns && stream.rows) {
       width = stream.columns;
-      height = stream.rows;  
+      height = stream.rows;
     } else if (stream.getWindowSize) {
       size = stream.getWindowSize(1);
       width = size[0];

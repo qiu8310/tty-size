@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-var size = require('./')();
+var size = require('./index')();
 
 console.log('');
 console.log('   width: %d  height: %d', size.width, size.height);
